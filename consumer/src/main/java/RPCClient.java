@@ -1,3 +1,4 @@
+import com.wan.entity.User;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
@@ -18,8 +19,10 @@ public class RPCClient {
             objectOutputStream.writeInt(new Random().nextInt());
             objectOutputStream.flush();
             User user = (User)objectInputStream.readObject();
-        } catch (IOException e) {
+            System.out.println("服务端返回的User:"+user);
+        } catch (IOException | ClassNotFoundException e) {
             e.printStackTrace();
+            System.out.println("客户端启动失败");
         }
 
     }
