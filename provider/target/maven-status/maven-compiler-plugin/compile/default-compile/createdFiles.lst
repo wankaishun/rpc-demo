@@ -1,4 +1,8 @@
-com\wan\service\UserService.class
 com\wan\service\Impl\UserServiceImpl.class
+com\wan\entity\RPCResponse$RPCResponseBuilder.class
+com\wan\entity\RPCResponse.class
+com\wan\service\UserService.class
+com\wan\entity\RPCRequest.class
+com\wan\entity\RPCRequest$RPCRequestBuilder.class
 com\wan\entity\User$UserBuilder.class
 com\wan\entity\User.class
